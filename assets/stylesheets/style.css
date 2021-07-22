@@ -1,0 +1,243 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222222;
+}
+
+#header a {
+  font-size: 13px;
+  color: #222222;
+}
+
+#logo {
+  width: 272px;
+  margin: 25px;
+}
+
+#adv_logo {
+  width: 74px;
+  float: left;
+}
+
+#header {
+  flex: 0 1 20vh; /* flex-grow: 0; flex-shrink: 1; flex-basis: length of item --> in this case since flex-direction is in columns, this length controls the HEIGHT of the section */
+  padding: 6px;
+  margin-top: 0.5%;
+}
+
+#footer {
+  flex: 1 1 auto;
+  padding: 6px;
+}
+
+.container-fluid {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+#img_search_bar,
+#search_bar {
+  width: 45vw;
+  max-width: 487px;
+  border-radius: 30px;
+  border: rgb(180, 180, 180) solid 0.8px;
+  padding: 8px 47px;
+  box-sizing: content-box;
+}
+
+#img_search_bar {
+  padding-right: 50px;
+}
+
+#img_search_bar:hover,
+#img_search_bar:focus,
+#search_bar:hover,
+#search_bar:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 2px #e4e4e4;
+  /* If only two values are given, they are interpreted as <offset-x> and <offset-y> values. --> this offset can direct the shadow as though you're shining from a certain direction. Both being zeroes will make the light source look like it's coming from straight in front.
+    If a third value is given, it is interpreted as a <blur-radius>. (The larger this value, the bigger the blur, so the shadow becomes bigger and lighter.)
+    If a fourth value is given, it is interpreted as a <spread-radius>. */
+}
+
+label.lab_search {
+  position: relative;
+}
+
+label.lab_search:before {
+  content: "";
+  margin-left: 8px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("data:image/svg+xml,%3Csvg fill='grey' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+#buttons_text_search {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 18px 0px 0px;
+}
+
+#adv_content {
+  margin: 0px 0px 0px 10px;
+}
+
+#adv_header {
+  margin: 25px 35px 0px 35px;
+  font-size: 20px;
+  color: #d93025;
+  width: 100%;
+}
+
+#submit_btn,
+#feeling_lucky {
+  cursor: pointer;
+  color: #222222;
+  background-color: #f8f9fa;
+  margin: 11px 4px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+#submit_btn:hover,
+#feeling_lucky:hover {
+  border: 0.3px solid #e4e4e4;
+}
+
+#submit_btn:focus,
+#feeling_lucky:focus {
+  border: 0.3px solid rgb(10, 122, 250);
+  outline: none;
+}
+
+#image_btn {
+  border: none;
+  background: none;
+  color: rgb(10, 122, 250);
+  cursor: pointer;
+  margin-left: -40px;
+  position: relative;
+  z-index: 100;
+}
+
+div.adv_form {
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 20px 2% 0 45px;
+}
+
+div.subheader {
+  font-size: 16px;
+  color: #333333;
+}
+
+label.adv_label {
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 16px;
+  float: left;
+  width: 20%;
+  display: flex;
+  vertical-align: middle;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+input.adv_inp {
+  border: 1px solid #d9d9d9;
+  border-radius: 1px;
+  font-size: 13px;
+  height: 30px;
+  width: 45%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 10px;
+}
+
+input.adv_inp:focus {
+  border: 0.3px solid rgb(10, 122, 250);
+  outline: none;
+}
+
+div.adv_inp {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+div.sub {
+  margin-bottom: 20px;
+}
+
+#instr_head {
+  color: #777777;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.instr {
+  color: #555555;
+  font-size: 11px;
+  padding: 0 0 0 5px;
+  margin: 0 0 0 12px;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+#adv_submit {
+  width: 65%;
+}
+
+#adv_btn {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 7px 12px;
+  background-color: #4d90fe;
+  color: white;
+  border: 1px solid #3079ed;
+  border-radius: 2px;
+}
+
+#adv_btn:hover {
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+}
+
+#adv_btn:focus {
+  box-shadow: inset 0 0 0 1px #fff;
+  outline: none;
+}
+
+/* Mobile Friendliness - media queries */
+@media (max-width: 850px) {
+  #img_search_bar,
+  #search_bar {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  #img_search_bar,
+  #search_bar {
+    width: 55vw;
+  }
+}
