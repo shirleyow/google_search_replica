@@ -130,6 +130,10 @@ label.lab_search:before {
   z-index: 100;
 }
 
+#image_btn:focus {
+  outline: none;
+}
+
 div.adv_form {
   max-width: 1140px;
   min-width: 200px;
